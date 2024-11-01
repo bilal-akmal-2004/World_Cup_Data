@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button onclick="openModal()" style="visibility: hidden">Open</button>
+    <div class="main-modal">
+      <div class="middle-modal-box">
+        <div id="close-Cross">
+          <button onclick="closeModal()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="main-container">
+          <table id="teamTable">
+            <thead>
+              <tr>
+                <th class="heading-row">Teams Name</th>
+                <th class="heading-row">Code</th>
+                <th class="heading-row">Postion</th>
+                <th class="heading-row">Played</th>
+                <th class="heading-row">Wins</th>
+                <th class="heading-row">Drawn</th>
+                <th class="heading-row">Lost</th>
+                <th class="heading-row">Goals For</th>
+                <th class="heading-row">Goals Against</th>
+                <th class="heading-row">Points</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
